@@ -6,6 +6,7 @@ extern crate proc_macro;
 extern crate proc_macro2;
 extern crate syn;
 #[macro_use] extern crate quote;
+#[macro_use] extern crate proc_macro_hack;
 
 mod spanned;
 mod parser;
@@ -204,7 +205,7 @@ impl Switch {
     }
 }
 
-#[proc_macro]
+#[proc_macro_hack]
 pub fn switch(input: TokenStream) -> TokenStream {
     // TODO: We lose diagnostic information by using syn's thing here. We need a
     // way to get a SynParseStream from a TokenStream to not do that.

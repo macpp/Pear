@@ -6,3 +6,5 @@ workspace = "../../"
 [dependencies]
 pear = { path = "../../lib" }
 pear_codegen = { path = "../../codegen" }
+proc-macro-hack = "0.5"
+proc-macro-nested = "0.1"

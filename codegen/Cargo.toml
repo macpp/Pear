@@ -12,6 +12,7 @@ proc-macro = true
 quote = "0.6"
 proc-macro2 = { version = "0.4", features = ["nightly"] }
 syn = { version = "0.15", features = ["full", "extra-traits", "visit-mut"] }
+proc-macro-hack = "0.5"
 
 [build-dependencies]
 yansi = "0.4"

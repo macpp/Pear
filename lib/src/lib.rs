@@ -3,8 +3,9 @@
 #![feature(specialization)]
 
 #[allow(unused_imports)] #[macro_use] extern crate pear_codegen;
-#[doc(hidden)] pub use pear_codegen::*;
-
+#[macro_use] extern crate proc_macro_hack;
+#[doc(hidden)] pub use pear_codegen::parser;
+#[doc(hidden)] #[proc_macro_hack(support_nested)] pub use pear_codegen::switch;
 #[macro_use] mod macros;
 mod input;
 mod result;
