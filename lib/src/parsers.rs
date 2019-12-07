@@ -1,4 +1,4 @@
-use {Result, Input, Length, Expected, ParseErr/*, switch*/};
+use {Result, Input, Length, Expected, ParseErr};
 
 // TODO:
 // * provide basic parsers in pear
